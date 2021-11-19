@@ -1,0 +1,12 @@
+The code can be run as is, with the exception of loading the dataset.
+To do so, download the dataset using the link in the LinkToDataset.txt file
+Move the train, test and relation2id json files to the current directory
+In the code, search for :
+with open("/content/drive/MyDrive/relation2id.json", "r") as read_file:
+and replace the file paths as neccesary for each file 
+
+You may additionally need to download the libraries used in this project using pip, 
+including sklearn, nltk, pandas, numpy, seaborn, matplotlib, tqdm, collections,
+tensorflow, torch, networkx
+Some downloads may take some time. 
+The code checks for the use of GPUs, so try to run it using google colab on the GPU.
